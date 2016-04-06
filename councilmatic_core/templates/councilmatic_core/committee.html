@@ -110,7 +110,7 @@
                                 {{membership.person.current_council_seat}}
                             </td>
                             <td>
-                                Chairperson
+                                {{ membership.role | title }}
                             </td>
                         </tr>
                     {% endfor %}
@@ -128,7 +128,7 @@
                                 {{membership.person.current_council_seat}}
                             </td>
                             <td>
-                                Member
+                                {{ membership.role | title }}
                             </td>
                         </tr>
                     {% endfor %}

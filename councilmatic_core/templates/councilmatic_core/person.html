@@ -149,7 +149,7 @@
                                     <td>
                                         {{membership.organization.link_html|safe}}
                                     </td>
-                                    <td>Chairperson</td>
+                                    <td>{{membership.role|title}}</td>
                                 </tr>
                             {% endfor %}
                             {% for membership in person.member_role_memberships %}
@@ -157,7 +157,7 @@
                                     <td>
                                         {{membership.organization.link_html|safe}}
                                     </td>
-                                    <td>Member</td>
+                                    <td>{{membership.role|title}}</td>
                                 </tr>
                             {% endfor %}
                         </tbody>
